@@ -12,8 +12,8 @@ export class GithubService {
 
   constructor(private configService: ConfigService) {
     const token = this.configService.get<string>('GITHUB_TOKEN');
-    this.owner = this.configService.get<string>('GITHUB_OWNER');
-    this.repo = this.configService.get<string>('GITHUB_REPO');
+    this.owner = this.configService.get<string>('GITHUB_OWNER') || '';
+    this.repo = this.configService.get<string>('GITHUB_REPO') || '';
 
     this.octokit = new Octokit({ auth: token });
     this.logger.log('GitHub service initialized');

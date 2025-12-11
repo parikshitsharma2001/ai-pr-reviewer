@@ -7,6 +7,6 @@ import { SlackModule } from '../slack/slack.module';
 @Module({
   imports: [GithubModule, SlackModule],
   providers: [ReviewerService, OllamaService],
-  exports: [ReviewerService],
+  exports: [ReviewerService, OllamaService],
 })
 export class ReviewerModule {}
