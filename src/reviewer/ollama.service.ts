@@ -27,7 +27,7 @@ export class OllamaService {
 
   constructor(private configService: ConfigService) {
     const baseUrl = this.configService.get<string>('OLLAMA_BASE_URL') || 'http://localhost:11434';
-    this.model = this.configService.get<string>('OLLAMA_MODEL') || 'llama2';
+    this.model = this.configService.get<string>('OLLAMA_MODEL') || 'llama3';
 
     this.client = axios.create({
       baseURL: baseUrl,

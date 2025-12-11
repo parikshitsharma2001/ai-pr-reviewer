@@ -31,14 +31,14 @@ export class ReviewerService {
       const review = await this.generateReview(prData, diff, files.length);
 
       // Step 3: Post review to GitHub
-      await this.githubService.createReviewComment(prNumber, review.rawReview);
+      //await this.githubService.createReviewComment(prNumber, review.rawReview);
 
       // Step 4: Send notification to Slack
       await this.slackService.sendPRReview(prData, review);
 
       // Step 5: Add label based on assessment
-      const label = this.getReviewLabel(review.assessment);
-      await this.githubService.addLabel(prNumber, label);
+      // const label = this.getReviewLabel(review.assessment);
+      // await this.githubService.addLabel(prNumber, label);
 
       this.logger.log(`Successfully completed review for PR #${prNumber}`);
     } catch (error) {

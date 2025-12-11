@@ -14,7 +14,7 @@ export class SlackService {
     const token = this.configService.get<string>('SLACK_BOT_TOKEN');
     this.channelId = this.configService.get<string>('SLACK_CHANNEL_ID') || '';
     this.client = new WebClient(token);
-    this.logger.log('Slack service initialized');
+    console.log('Slack service initialized');
   }
 
   async sendPRReview(
@@ -30,7 +30,7 @@ export class SlackService {
         blocks,
       });
 
-      this.logger.log(`Sent PR review to Slack for PR #${pr.number}`);
+      console.log(`Sent PR review to Slack for PR #${pr.number}`);
     } catch (error) {
       this.logger.error(`Failed to send Slack message: ${error.message}`);
       throw error;
@@ -127,7 +127,7 @@ export class SlackService {
         text: message,
       });
 
-      this.logger.log('Sent message to Slack');
+      console.log('Sent message to Slack');
     } catch (error) {
       this.logger.error(`Failed to send Slack message: ${error.message}`);
       throw error;
