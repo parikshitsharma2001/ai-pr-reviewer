@@ -347,5 +347,5 @@ MIT License - See LICENSE file for details
 
 ## 🙏 ScreenShots
 ![WebHook of GitHub](./assets/WebHookGitHub.png)
-![Service Logs](./assets/WebHookGitHub.png)
-![Slack Channel](./assets/WebHookGitHub.png)
+![Service Logs](./assets/ConsoleLogs.png)
+![Slack Channel](./assets/Slack.png)
