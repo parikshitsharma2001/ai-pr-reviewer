@@ -346,6 +346,6 @@ Contributions are welcome! Feel free to:
 MIT License - See LICENSE file for details
 
 ## 🙏 ScreenShots
-![WebHook of GitHub](./assets/WebHookGitHub.png)
-![Service Logs](./assets/ConsoleLogs.png)
-![Slack Channel](./assets/Slack.png)
+![WebHook of GitHub](./src/assets/WebHookGitHub.png)
+![Service Logs](./src/assets/ConsoleLogs.png)
+![Slack Channel](./src/assets/Slack.png)
