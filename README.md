@@ -40,7 +40,7 @@ src/
 1. **Clone the repository**
    ```bash
    git clone <your-repo-url>
-   cd nestjs-mcp-pr-reviewer
+   cd ai-pr-reviewer
    ```
 
 2. **Install dependencies**
@@ -345,19 +345,7 @@ Contributions are welcome! Feel free to:
 
 MIT License - See LICENSE file for details
 
-## 🙏 Acknowledgments
-
-- Based on the [Enterprise MCP Series](https://decodingml.substack.com/p/build-with-mcp-like-a-real-engineer)
-- Built with [NestJS](https://nestjs.com/)
-- Powered by [Ollama](https://ollama.com/)
-
-## 📞 Support
-
-For issues and questions:
-- Open an issue on GitHub
-- Check the troubleshooting section
-- Review the Enterprise MCP Series articles
-
----
-
-**Happy Reviewing! 🚀**
+## 🙏 ScreenShots
+![WebHook of GitHub](./assets/WebHookGitHub.png)
+![Service Logs](./assets/WebHookGitHub.png)
+![Slack Channel](./assets/WebHookGitHub.png)
